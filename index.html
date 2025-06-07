@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Music App</h1>
+        <div id="search-container">
+          <!-- Search bar will be injected here by SearchUI.ts -->
+        </div>
+      </header>
+      <main>
+        <div id="search-results">
+          <!-- Search results will be injected here by SearchUI.ts -->
+        </div>
+        <div id="player-container">
+          <!-- Audio player will be injected here by AudioPlayer.ts -->
+          <!-- Existing track-info and audio element will be created by AudioPlayer.ts -->
+          <div id="playlist-controls" style="margin-top: 10px; text-align: center;">
+              <button id="prev-button">Previous</button>
+              <button id="next-button">Next</button>
+          </div>
+        </div>
+        <div id="playlist-section">
+          <h3>Queue</h3>
+          <ul id="playlist-queue">
+            <!-- Queued items will be listed here -->
+          </ul>
+          <button id="clear-queue-button" style="display: none;">Clear Queue</button>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
